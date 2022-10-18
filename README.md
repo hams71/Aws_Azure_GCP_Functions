@@ -1,7 +1,7 @@
 # Aws_Azure_GCP_Functions
 
 Using Java SDKs for AWS, Azure and GCP to get authenticate, list bucket content and perform other different operations. This was done to allow the user
-to have data in cloud storages.
+to have data in cloud storages and using sdk, cli listing, getting content.
 
 
 ### Table of Contents
