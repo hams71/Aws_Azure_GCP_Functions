@@ -7,10 +7,11 @@ to have data in cloud storages.
 ### Table of Contents
 
 - [Overview](#overview)
-- [AWS](#AWS)
-- [Azure](#Azure)
-- [GCP](#GCP)
+- [AWS](#aws)
+- [Azure](#azure)
+- [GCP](#gcp)
 - [Program Flow](#program-flow)
+- [Maven](#maven)
 - [Documentation and Material](#documentation-and-material)
 - [Tools and Technologies](#tools-and-technologies)
 
@@ -22,7 +23,7 @@ to have data in cloud storages.
 - Java Cloud Interface was implemented by Aws, Azure and GCP code so that have a common api calling. 
 - All 3 have same function name that interface makes us to implement but their own way of executing.
 - This was code is being used in many different patterns Reg, Load, Bulk Reg, Bulk Load, Export, NOS Read, NOS Write.
-
+- This code is just a small part of our something bigger. 
 
 ---
 
@@ -112,6 +113,7 @@ az login --service-principal -u <ClientId> --tenant <TenantId> -p <ClientSecret>
 <p align="center">
   <img src="Images/google.JPG">
 </p>
+
 ---
 
 ### Program Flow
@@ -129,15 +131,58 @@ az login --service-principal -u <ClientId> --tenant <TenantId> -p <ClientSecret>
 
 ---
 
- 
+### Maven 
+
+```bash
+	  <!-- AWS -->
+		
+      	<dependency>
+      		<groupId>software.amazon.awssdk</groupId>
+      		<artifactId>s3</artifactId>
+    	</dependency>
+			
+		<!-- Azure From VSC -->
+		
+		<dependency>
+		      <groupId>com.azure</groupId>
+		      <artifactId>azure-identity</artifactId>
+		      <version>1.2.0</version>
+	    </dependency>
+	    
+	    <dependency>
+	        <groupId>com.azure</groupId>
+	        <artifactId>azure-storage-blob</artifactId>
+	        <version>12.8.0</version>
+	    </dependency>
+		
+		<dependency>
+		    <groupId>com.azure</groupId>
+		    <artifactId>azure-core</artifactId>
+		    <version>1.18.0</version>
+		</dependency>
+				
+		<!-- Needed to get this dependency for it to work else was not working --> 
+		<dependency>
+			<groupId>com.microsoft.azure</groupId>
+			<artifactId>msal4j</artifactId>
+			<version>1.9.1</version> 
+		</dependency> 
+		
+		
+    	<dependency>
+      		<groupId>com.google.cloud</groupId>
+      		<artifactId>google-cloud-storage</artifactId>
+    	</dependency>
+```
+
+---
 
 ### Documentation and Material
 
 - [Azure Service Principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
 - [AWS Configure](https://docs.aws.amazon.com/cli/latest/reference/configure/)
 - [GCP Configure](https://cloud.google.com/sdk/docs/initializing)
-- [Snowflake Youtube Playlist](https://www.youtube.com/playlist?list=PLy4OcwImJzBIX77cmNYiXIJ3tBhpNSUKI)
-- Thanks to Kahan Data Solutions for the demo videos.
+
   
 ---
 ### Tools and Technologies
