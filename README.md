@@ -10,9 +10,7 @@ to have data in cloud storages.
 - [AWS](#AWS)
 - [Azure](#Azure)
 - [GCP](#GCP)
-- [Folder Structure](#folder-structure)
 - [Program Flow](#program-flow)
-- [Program Execution](#program-execution)
 - [Documentation and Material](#documentation-and-material)
 - [Tools and Technologies](#tools-and-technologies)
 
@@ -114,23 +112,19 @@ az login --service-principal -u <ClientId> --tenant <TenantId> -p <ClientSecret>
 <p align="center">
   <img src="Images/google.JPG">
 </p>
-google.JPG
-
 ---
 
 ### Program Flow
 
+- All the 3 cloud pattern implement the cloud interface. This allow us to have same function name but different implemention.
+- The 3 cloud patterns are used in a number of different processes based on user cloud vendor they can use which one to use.
+- 1 for AWS, 2 for GCP and 3 for Azure.
+
 <p align="center">
-  <img src="Images/Flow.jpg" width="850" >
+  <img src="Images/Inheritance.jpg">
 </p>
 
 
-
-
----
-
-### Program Execution
-  
 
 
 ---
