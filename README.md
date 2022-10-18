@@ -123,7 +123,7 @@ az login --service-principal -u <ClientId> --tenant <TenantId> -p <ClientSecret>
 - 1 for AWS, 2 for GCP and 3 for Azure.
 
 <p align="center">
-  <img src="Images/Inheritance.jpg">
+  <img src="Images/Inheritance.jpg" width="700">
 </p>
 
 
